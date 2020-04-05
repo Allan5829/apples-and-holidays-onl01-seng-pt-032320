@@ -78,11 +78,12 @@ def all_supplies_in_holidays(holiday_hash)
           temp_array.each do |word|
             word.capitalize!
           end
-          holiday = temp_array.join " "
+          holiday = temp_array.join (" ")
           supply.each do |item|
             temp_array2 << item
           end
-          supply = temp_array2.join ""
+          supply = temp_array2.join (", ")
+          puts "  #{holiday}: #{supply}"
         end
     end
 end
