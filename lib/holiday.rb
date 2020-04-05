@@ -83,6 +83,7 @@ def all_supplies_in_holidays(holiday_hash)
           end
           supply = temp_array2.join (", ")
           puts "  #{holiday}: #{supply}"
+          temp_array2 = []
         end
     end
 end
