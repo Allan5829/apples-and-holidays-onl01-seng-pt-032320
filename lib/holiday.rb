@@ -68,6 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   temp_array = []
+  temp_array2 = []
     holiday_hash.each do |season, holiday|
       season.to_s
       puts "#{season}:".capitalize!
@@ -78,7 +79,10 @@ def all_supplies_in_holidays(holiday_hash)
             word.capitalize!
           end
           holiday = temp_array.join " "
-          
+          supply.each do |item|
+            temp_array2 << item
+          end
+          supply = temp_array2.join ""
         end
     end
 end
