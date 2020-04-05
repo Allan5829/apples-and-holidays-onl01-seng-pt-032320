@@ -60,19 +60,6 @@ def all_winter_holiday_supplies(holiday_hash)
     end
   end
   supply_array
-
-
-
-
-contacts.each do |person, contact_details_hash|
-    if person == "Freddy Mercury"
-      contact_details_hash.each do |attribute, data|
-        if attribute == :favorite_ice_cream_flavors
-          data.delete_if {|ice_cream| ice_cream == "strawberry"}
-        end
-      end
-    end
-  end
 end
 
 def all_supplies_in_holidays(holiday_hash)
